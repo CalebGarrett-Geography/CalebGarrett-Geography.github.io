@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Bird Blood App_CG Index</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/dc.css">
+  <link rel="stylesheet" type="text/css" href="css/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style>
+  #map {
+    height: 300px;
+    width: 400PX;
+  }</style>
+  <!-- Maybe need to change main.css file or add window.onlaod, becasue the above style code did not function in main.css file -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 dc-data-count dc-chart" id="data-count">
+        <h2>Bird Blood
+          <small>
+            <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
+            <a id="all" href="#">Reset All</a>
+            </span>
+          </small>
+        </h2>
+      </div>
+    </div>
+    <div class="row" id="control-row">
+
+      <div class="col-xs-3 pie-chart">
+        <h4>Bird Sex</h4>
+        <div class="dc-chart" id="chart-sex"></div>
+      </div>
+
+      <div class="col-xs-3 pie-chart">
+        <h4>Bird AGE</h4>
+        <div class="dc-chart" id="chart-sex"></div>
+      </div>
+
+      <div class="col-xs-2">
+        <div class="dc-chart" id="chart-species-bar"></div>
+      </div>
+
+      <!-- <div class="col-xs-2">
+      </div> -->
+
+
+      <!-- <div class="col-xs-2 pie-chart">
+        <h4>Year <small><a id="year">reset</a></small></h4>
+        <div class="dc-chart" id="chart-ring-year"></div>
+      </div> -->
+
+      <!-- <div class="col-xs-2 pie-chart">
+        <h4>Month <small><a id="month" href="#">reset</a></small></h4>
+        <div class="dc-chart" id="chart-sex"></div>
+      </div> -->
+      
+      <!-- <div class="col-xs-2 pie-chart">
+        <h4>Day <small><a id="day">reset</a></small></h4>
+        <div id="chart-ring-day" class="dc-chart"></div>
+      </div> -->
+
+      <div class="col-xs-4">
+        <h4>Bird Sample Locations</h4>
+        <div id="map"></div>
+      </div>
+    </div>
+
+
+    <!-- <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <div class="dc-chart" id="chart-rating-box"></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="dc-chart" id="chart-community-rating-count"></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="dc-chart" id="chart-abv-count"></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="dc-chart" id="chart-ibu-count"></div>
+      </div>
+    </div> -->
+
+
+    <div class="row">
+      <div class="col-xs-12">
+        <table class="table table-bordered table-striped" id="data-table">
+          <thead>
+            <tr class="header">
+              <!-- <th>Brewery</th>
+              <th>Beer</th>
+              <th>Style</th>
+              <th>My Rating</th>
+              <th>Community Rating</th>
+              <th>ABV %</th>
+              <th>IBU</th> -->
+              <th>Species</th>
+              <th>Sex</th>
+              <th>Age</th>
+              <th>Locality</th>
+              <th>Elevation</th>
+              <th>Elev_cat</th>
+              <th>tHbcorr</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/d3.js"></script>
+  <script type="text/javascript" src="js/crossfilter.js"></script>
+  <script type="text/javascript" src="js/dc.js"></script>
+  <script type="text/javascript" src="js/leaflet.js"></script>
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript">
+
+    /* instantiate and configure map */
+    var map = L.map('map');
+    // var breweryMarkers = new L.FeatureGroup();
+    var birdMarkers = new L.FeatureGroup();
+
+    // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    //   id: '<your id here>',
+    //   accessToken: '<your token here>',
+    //   maxZoom: 16
+    // } ).addTo(map);
+
+    var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+      maxZoom: 17,
+      attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+    });
+    OpenTopoMap.addTo(map);
+
+    /* Parse JSON file, create charts, draw markers on map */
+    // d3.json('untappd.json', function (error, data) {
+    d3.csv('blood_final.csv', function (error, data) {
+      // var beerData = data.response.beers.items;
+
+      // var fullDateFormat = d3.time.format('%a, %d %b %Y %X %Z');
+      // var yearFormat = d3.time.format('%Y');
+      // var monthFormat = d3.time.format('%b');
+      // var dayOfWeekFormat = d3.time.format('%a');
+
+      // // normalize/parse data so dc can correctly sort & bin them
+      // // I like to think of each "d" as a row in a spreadsheet
+      // _.each(beerData, function (d) {
+      //   d.count = +d.count;
+      //   // round to nearest 0.25
+      //   d.rating_score = Math.round(+d.rating_score * 4) / 4;
+      //   d.beer.rating_score = Math.round(+d.beer.rating_score * 4) / 4;
+      //   // round to nearest 0.5
+      //   d.beer.beer_abv = Math.round(+d.beer.beer_abv * 2) / 2;
+      //   // round to nearest 10
+      //   d.beer.beer_ibu = Math.floor(+d.beer.beer_ibu / 10) * 10;
+
+      //   d.first_had_dt = fullDateFormat.parse(d.first_had);
+      //   d.first_had_year = +yearFormat(d.first_had_dt);
+      //   d.first_had_month = monthFormat(d.first_had_dt);
+      //   d.first_had_day = dayOfWeekFormat(d.first_had_dt);
+      // });
+
+      // set crossfilter
+      var ndx = crossfilter(data);
+
+
+
+
+      // create dimensions (x-axis values)
+      var sexDim = ndx.dimension(function (d) { return d["sex"]; });
+      var speciesDim = ndx.dimension(function (d) { return d["species"]; });
+      var tHbcorrDim = ndx.dimension(function (d) { return d["tHbcorr"]; });
+      var Elev_catDim = ndx.dimension(function (d) { return d["Elev_cat	"]; });
+      //     var yearDim = ndx.dimension(function (d) { return d.first_had_year; }),
+      //       // dc.pluck: short-hand for same kind of anon. function we used for yearDim
+      //       monthDim = ndx.dimension(dc.pluck('first_had_month')),
+      //       dayOfWeekDim = ndx.dimension(dc.pluck('first_had_day')),
+      //       ratingDim = ndx.dimension(dc.pluck('rating_score')),
+      //       ratingDim = ndx.dimension(dc.pluck('rating_score')),
+      //       ratingBlood = ndx.dimension(dc.pluck('rating_score')),
+      //       commRatingDim = ndx.dimension(function (d) { return d.beer.rating_score; }),
+      //       abvDim = ndx.dimension(function (d) { return d.beer.beer_abv; }),
+      //       ibuDim = ndx.dimension(function (d) { return d.beer.beer_ibu; }),
+      var allDim = ndx.dimension(function (d) { return d; });
+
+
+
+
+
+      // create groups (y-axis values)
+      var all = ndx.groupAll();
+
+      var sexGroup = sexDim.group().reduceCount();
+      var speciesGroup = speciesDim.group();
+      var tHbcorrGroup = tHbcorrDim.group().reduceCount();
+      var Elev_catGroup = Elev_catDim.group();
+      //     var countPerYear = yearDim.group().reduceCount(),
+      //     var countPerYear = yearDim.group().reduceCount(),
+      //       countPerMonth = monthDim.group().reduceCount(),
+      //       countPerDay = dayOfWeekDim.group().reduceCount(),
+      //       countPerRating = ratingDim.group().reduceCount(),
+      //       countPerCommRating = commRatingDim.group().reduceCount(),
+      //       countPerABV = abvDim.group().reduceCount(),
+      //       countPerIBU = ibuDim.group().reduceCount();
+
+
+
+
+      // specify charts
+
+      var sexChart = dc.pieChart('#chart-sex');
+      // var Elev_catCountBarChart = dc.barChart('#chart-Elev_cat-bar');
+      var speciesCountBarChart = dc.barChart('#chart-species-bar');
+      // var tHbcorrCountBarChart = dc.barChart('#chart-tHbcorr-bar');
+
+
+      //     var yearChart = dc.pieChart('#chart-ring-year'),
+      //       monthChart = dc.pieChart('#chart-ring-month'),
+      //       dayChart = dc.pieChart('#chart-ring-day'),
+      //       ratingBoxChart = dc.boxPlot('#chart-rating-box'),
+      //       commRatingCountChart = dc.barChart('#chart-community-rating-count'),
+      //       abvCountChart = dc.barChart('#chart-abv-count'),
+      //       ibuCountChart = dc.barChart('#chart-ibu-count'),
+
+      dataCount = dc.dataCount('#data-count')
+      dataTable = dc.dataTable('#data-table');
+
+
+
+      sexChart
+        .width(250)
+        .height(300)
+        .dimension(sexDim)
+        .group(sexGroup)
+        .ordering(function (d) { return -d.value });
+
+      speciesCountBarChart
+        .width(300)
+        .height(500)
+        .margins({ top: 10, right: 20, bottom: 200, left: 50 }) // because of the x axix label, need to set the bootom margin a large number
+        .x(d3.scale.ordinal().domain(speciesDim))  //d3.scale.ordinal().domain(genusDim) //d3.scaleBand() for d3 v4
+        .xUnits(dc.units.ordinal)
+        .brushOn(false)
+        // .xAxisLabel('Macroarea')
+        .yAxisLabel('Count')
+        .elasticX(true)
+        .elasticY(true)
+        .dimension(speciesDim)
+        .barPadding(0.3)
+        .outerPadding(0.05)
+        .group(speciesGroup)
+        .renderlet(function (chart) {
+          chart.selectAll("g.x text")
+            // .attr('dx', '-30')
+            .attr('dx', '-30')
+            .attr('transform', "rotate(-35)");
+        });
+
+
+
+      //       yearChart
+      //         .width(150)
+      //         .height(150)
+      //         .dimension(yearDim)
+      //         .group(countPerYear)
+      //         .innerRadius(20);
+
+      //       monthChart
+      //         .width(150)
+      //         .height(150)
+      //         .dimension(monthDim)
+      //         .group(countPerMonth)
+      //         .innerRadius(20)
+      //         .ordering(function (d) {
+      //           var order = {
+      //             'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4,
+      //             'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8,
+      //             'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+      //           };
+      //           return order[d.key];
+      //         });
+
+      //       dayChart
+      //         .width(150)
+      //         .height(150)
+      //         .dimension(dayOfWeekDim)
+      //         .group(countPerDay)
+      //         .innerRadius(20)
+      //         .ordering(function (d) {
+      //           var order = {
+      //             'Mon': 0, 'Tue': 1, 'Wed': 2, 'Thu': 3,
+      //             'Fri': 4, 'Sat': 5, 'Sun': 6
+      //           }
+      //           return order[d.key];
+      //         }
+      //         );
+
+
+      //       commRatingCountChart
+      //         .width(300)
+      //         .height(180)
+      //         .dimension(commRatingDim)
+      //         .group(countPerCommRating)
+      //         .x(d3.scale.linear().domain([0, 5.2]))
+      //         .elasticY(true)
+      //         .centerBar(true)
+      //         .barPadding(5)
+      //         .xAxisLabel('Community rating')
+      //         .yAxisLabel('Count')
+      //         .margins({ top: 10, right: 20, bottom: 50, left: 50 });
+      //       commRatingCountChart.xAxis().tickValues([0, 1, 2, 3, 4, 5]);
+
+      //       abvCountChart
+      //         .width(300)
+      //         .height(180)
+      //         .dimension(abvDim)
+      //         .group(countPerABV)
+      //         .x(d3.scale.linear().domain([-0.2, d3.max(beerData, function (d) { return d.beer.beer_abv; }) + 0.2]))
+      //         .elasticY(true)
+      //         .centerBar(true)
+      //         .barPadding(2)
+      //         .xAxisLabel('Alcohol By Volume (%)')
+      //         .yAxisLabel('Count')
+      //         .margins({ top: 10, right: 20, bottom: 50, left: 50 });
+
+      //       ibuCountChart
+      //         .width(300)
+      //         .height(180)
+      //         .dimension(ibuDim)
+      //         .group(countPerIBU)
+      //         .x(d3.scale.linear().domain([-2, d3.max(beerData, function (d) { return d.beer.beer_ibu; }) + 2]))
+      //         .elasticY(true)
+      //         .centerBar(true)
+      //         .barPadding(5)
+      //         .xAxisLabel('International Bitterness Units')
+      //         .yAxisLabel('Count')
+      //         .xUnits(function (d) { return 5; })
+      //         .margins({ top: 10, right: 20, bottom: 50, left: 50 });
+
+      dataCount
+        .dimension(ndx)
+        .group(all);
+
+      dataTable
+        .dimension(allDim)
+        .group(function (d) { return 'dc.js insists on putting a row here so I remove it using JS'; })
+        .size(100)
+        .columns([
+          // function (d) { return d.brewery.brewery_name; },
+          // function (d) { return d.beer.beer_name; },
+          // function (d) { return d.beer.beer_style; },
+          // function (d) { return d.rating_score; },
+          // function (d) { return d.beer.rating_score; },
+          // function (d) { return d.beer.beer_abv; },
+          // function (d) { return d.beer.beer_ibu; }
+
+          function (d) { return d["species"]; },
+          function (d) { return d["sex"]; },
+          function (d) { return d["age"]; },
+          function (d) { return d["locality"]; },
+          function (d) { return d["elevation"]; },
+          function (d) { return d["elev_cat"]; },
+          function (d) { return d["tHbcorr"]; },
+
+        ])
+        .sortBy(dc.pluck('rating_score'))
+        .order(d3.descending)
+        .on('renderlet', function (table) {
+          // each time table is rendered remove nasty extra row dc.js insists on adding
+          table.select('tr.dc-table-group').remove();
+
+          // update map with breweries to match filtered data
+          // breweryMarkers.clearLayers();
+          birdMarkers.clearLayers();
+          _.each(allDim.top(Infinity), function (d) {
+            // var loc = d.brewery.location;
+            var latitude = d["lat"]
+            var longitude = d["lon"]
+
+            var species = d["species"];
+            var sex = d["sex"];
+            var locality = d["locality"];
+            var elevation = d["elevation"];
+            var tHbcorr = d["tHbcorr"];
+
+            // var name = d.brewery.brewery_name;
+            // var marker = L.marker([loc.lat, loc.lng]);
+            var marker = L.marker([latitude, longitude]);
+            // marker.bindPopup("<p>" + name + " " + loc.brewery_city + " " + loc.brewery_state + "</p>");
+            // marker.bindPopup("<p>" + name + " " + d["species"] + "</p>");
+
+            marker.bindPopup("species: " + species + "<br>" +
+              "Sex: " + sex + "<br>" +
+              "Locality: " + locality + "<br>" +
+              "Elevation: " + elevation + "<br>" +
+              "tHbcorr: " + tHbcorr + "<br>");
+
+            birdMarkers.addLayer(marker);
+          });
+          map.addLayer(birdMarkers);
+          map.fitBounds(birdMarkers.getBounds());
+        });
+
+      // register handlers
+      d3.selectAll('a#all').on('click', function () {
+        dc.filterAll();
+        dc.renderAll();
+      });
+
+      d3.selectAll('a#year').on('click', function () {
+        yearChart.filterAll();
+        dc.redrawAll();
+      });
+
+      d3.selectAll('a#month').on('click', function () {
+        monthChart.filterAll();
+        dc.redrawAll();
+      });
+
+      d3.selectAll('a#day').on('click', function () {
+        dayChart.filterAll();
+        dc.redrawAll();
+      });
+
+      // showtime!
+      dc.renderAll();
+
+    });
+
+  </script>
+</body>
+
+</html>

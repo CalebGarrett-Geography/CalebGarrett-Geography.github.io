@@ -1,0 +1,353 @@
+,species,sex,age,locality,elevation,elev_cat,lat,lon,tHbcorr
+1,Phleocryptes melanops,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,NA
+2,Phleocryptes melanops,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,17.5
+3,Tachuris rubrigastra,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.5
+4,Phleocryptes melanops,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,14
+5,Phleocryptes melanops,male,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,18.5
+6,Phleocryptes melanops,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.4
+7,Tachuris rubrigastra,male,0,Viscachuni,3828,h,-15.80676667,-69.99171667,17.6
+8,Phleocryptes melanops,unkown,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,15.4
+9,Phleocryptes melanops,male,1,Viscachuni,3828,h,-15.80676667,-69.99171667,16.5
+10,Phleocryptes melanops,male,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,14.5
+11,Phleocryptes melanops,male,0,Viscachuni,3828,h,-15.80676667,-69.99171667,15.4
+12,Phleocryptes melanops,female,1,Viscachuni,3828,h,-15.80676667,-69.99171667,15.6
+13,Phleocryptes melanops,male,1,Viscachuni,3828,h,-15.80676667,-69.99171667,16.7
+14,Phleocryptes melanops,female,0,Puerto Morin,0,l,-8.426666667,-78.90415,17.9
+15,Phleocryptes melanops,male,0,Ondores,4061,h,-11.0563,-76.15615,14.5
+16,Phleocryptes melanops,male,0,Ondores,4050,h,-11.05541667,-76.15652778,15.1
+17,Phleocryptes melanops,female,1,Puerto Morin,0,l,-8.4258,-78.90205,19.2
+18,Phleocryptes melanops,male,0,Viscachuni,3828,h,-15.80676667,-69.99171667,16.1
+19,Phleocryptes melanops,female,1,Puerto Morin,0,l,-8.4258,-78.90205,16.7
+20,Phleocryptes melanops,female,0,Ondores,4060,h,-11.05541667,-76.15652778,16.7
+21,Phleocryptes melanops,male,0,Puerto Morin,0,l,-8.4258,-78.90205,17.5
+22,Phleocryptes melanops,male,1,Viscachuni,3828,h,-15.80676667,-69.99171667,15.8
+23,Phleocryptes melanops,male,0,Viscachuni,3828,h,-15.80676667,-69.99171667,16.5
+24,Phleocryptes melanops,male,0,Puerto Morin,-1,l,-8.426616667,-78.90375,19.4
+25,Phleocryptes melanops,male,0,Laguna Napique,4,l,-5.517133333,-80.70375,15.5
+26,Phleocryptes melanops,female,0,Puerto Morin,0,l,-8.426666667,-78.90415,15.7
+27,Phleocryptes melanops,female,0,Puerto Morin,0,l,-8.426616667,-78.90375,17.7
+28,Phleocryptes melanops,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.6
+29,Phleocryptes melanops,female,1,Laguna Napique,6,l,-5.5171,-80.70386667,16.7
+30,Phleocryptes melanops,male,0,Ondores,4060,h,-11.05496667,-76.15656667,17.8
+31,Phleocryptes melanops,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,15.1
+32,Phleocryptes melanops,male,1,Puerto Morin,0,l,-8.426666667,-78.90415,13.7
+33,Phleocryptes melanops,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,13.5
+34,Phleocryptes melanops,male,1,Ondores,4056,h,-11.05496667,-76.15656667,15.9
+35,Phleocryptes melanops,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,-1
+36,Phleocryptes melanops,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,13.1
+37,Phleocryptes melanops,male,1,Laguna Napique,3,l,-5.51765,-80.70386667,17.8
+38,Phleocryptes melanops,male,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,13.8
+39,Phleocryptes melanops,female,1,Laguna Napique,6,l,-5.5171,-80.70386667,14.9
+40,Phleocryptes melanops,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.7
+41,Phleocryptes melanops,male,0,Viscachuni,3828,h,-15.80676667,-69.99171667,14.9
+42,Phleocryptes melanops,female,0,Ondores,4060,h,-11.05496667,-76.15656667,13.1
+43,Phleocryptes melanops,female,1,Laguna Napique,3,l,-5.517133333,-80.70375,16
+44,Phleocryptes melanops,male,1,Laguna Napique,4,l,-5.517133333,-80.70375,14.8
+45,Phleocryptes melanops,male,0,Puerto Morin,-1,l,-8.426616667,-78.90375,16.3
+46,Phleocryptes melanops,female,0,Ondores,4061,h,-11.0563,-76.15615,15.6
+47,Phleocryptes melanops,male,1,Laguna Napique,6,l,-5.5171,-80.70386667,17.7
+48,Phleocryptes melanops,male,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,14.1
+49,Phleocryptes melanops,female,0,Laguna Napique,3,l,-5.51765,-80.70386667,16.7
+50,Phleocryptes melanops,female,1,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.1
+51,Phleocryptes melanops,female,0,Puerto Morin,0,l,-8.4258,-78.90205,14.5
+52,Phleocryptes melanops,male,1,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.7
+53,Phleocryptes melanops,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.2
+54,Phleocryptes melanops,male,0,Ondores,4060,h,-11.05496667,-76.15656667,19.3
+55,Tachuris rubrigastra,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,15.9
+56,Phleocryptes melanops,male,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,15.7
+57,Phleocryptes melanops,female,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,13.3
+58,Phleocryptes melanops,female,1,Laguna Napique,6,l,-5.5171,-80.70386667,18.1
+59,Phleocryptes melanops,female,0,Ondores,4061,h,-11.0563,-76.15615,18.2
+60,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,17.8
+61,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,-1
+62,Phleocryptes melanops,female,0,Puerto Morin,-1,l,-8.426616667,-78.90375,17
+63,Tachuris rubrigastra,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,15.3
+64,Phleocryptes melanops,male,0,Ondores,4058,h,-11.05583333,-76.156,17
+65,Phleocryptes melanops,male,0,Ondores,4058,h,-11.05583333,-76.156,15.9
+66,Tachuris rubrigastra,male,0,Puerto Morin,-1,l,-8.426616667,-78.90375,16.8
+67,Phleocryptes melanops,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,13.7
+69,Phleocryptes melanops,male,0,Ondores,4050,h,-11.05541667,-76.15652778,17.8
+70,Tachuris rubrigastra,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.4
+71,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,16.7
+72,Tachuris rubrigastra,male,0,Ondores,4050,h,-11.05541667,-76.15652778,21.4
+73,Phleocryptes melanops,female,1,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.8
+74,Tachuris rubrigastra,male,1,Laguna Napique,4,l,-5.517133333,-80.70375,17.2
+75,Tachuris rubrigastra,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,17.1
+76,Tachuris rubrigastra,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,16.7
+78,Phleocryptes melanops,male,1,Laguna Napique,4,l,-5.517133333,-80.70386667,17.4
+79,Tachuris rubrigastra,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,14.3
+81,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,18.8
+82,Tachuris rubrigastra,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,16.6
+83,Tachuris rubrigastra,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.8
+84,Phleocryptes melanops,male,1,Laguna Napique,4,l,-5.517133333,-80.70375,16.5
+85,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,18.6
+86,Tachuris rubrigastra,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.1
+87,Tachuris rubrigastra,female,0,Ondores,4050,h,-11.05541667,-76.15652778,18.7
+88,Tachuris rubrigastra,female,0,Laguna Napique,3,l,-5.51765,-80.70386667,16.4
+89,Phleocryptes melanops,male,0,Puerto Morin,-1,l,-8.426616667,-78.90375,16.8
+90,Tachuris rubrigastra,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.5
+92,Phleocryptes melanops,male,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,15
+93,Tachuris rubrigastra,female,1,Laguna Napique,4,l,-5.517133333,-80.70375,15.7
+94,Tachuris rubrigastra,female,0,Puerto Morin,0,l,-8.426666667,-78.90415,18.4
+95,Tachuris rubrigastra,male,1,Puerto Morin,0,l,-8.4258,-78.90205,16.8
+96,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,17.5
+97,Tachuris rubrigastra,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,15.3
+98,Tachuris rubrigastra,male,0,Ondores,4060,h,-11.05496667,-76.15656667,19.5
+99,Tachuris rubrigastra,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,15.6
+100,Tachuris rubrigastra,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.4
+102,Tachuris rubrigastra,female,0,Ondores,4050,h,-11.05541667,-76.15652778,19.5
+103,Tachuris rubrigastra,male,0,Ondores,4058,h,-11.05583333,-76.156,16.4
+104,Tachuris rubrigastra,male,1,Laguna Napique,4,l,-5.517133333,-80.70375,17.7
+105,Tachuris rubrigastra,female,0,Viscachuni,3828,h,-15.80676667,-69.99171667,17.7
+106,Tachuris rubrigastra,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,-1
+107,Tachuris rubrigastra,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.5
+108,Tachuris rubrigastra,female,0,Puerto Morin,0,l,-8.4258,-78.90205,20.1
+111,Tachuris rubrigastra,male,0,Laguna Napique,3,l,-5.517133333,-80.70386667,20.1
+112,Tachuris rubrigastra,male,1,Laguna Napique,6,l,-5.5171,-80.70386667,15.3
+113,Tachuris rubrigastra,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,17.5
+114,Tachuris rubrigastra,female,0,Puerto Morin,0,l,-8.4258,-78.90205,19.5
+115,Tachuris rubrigastra,male,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,15.4
+116,Phleocryptes melanops,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.6
+117,Tachuris rubrigastra,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.3
+119,Tachuris rubrigastra,female,0,Puerto Morin,-1,l,-8.4258,-78.90205,18.3
+120,Tachuris rubrigastra,female,0,Puerto Morin,0,l,-8.4258,-78.90205,21
+121,Tachuris rubrigastra,male,0,Laguna Napique,6,l,-5.5171,-80.70386667,16.6
+122,Tachuris rubrigastra,female,1,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15.2
+123,Tachuris rubrigastra,female,0,Puerto Morin,-1,l,-8.4258,-78.90205,18
+124,Tachuris rubrigastra,female,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,14.5
+125,Tachuris rubrigastra,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,16.4
+126,Tachuris rubrigastra,female,0,Ondores,4056,h,-11.0532,-76.1535,15.2
+127,Tachuris rubrigastra,male,0,Playa de Puerto Viejo,1,l,-12.57491667,-76.70346667,15
+128,Tachuris rubrigastra,male,0,Laguna Napique,4,l,-5.517133333,-80.70375,16.6
+129,Tachuris rubrigastra,female,1,Laguna Napique,3,l,-5.51765,-80.70386667,17.9
+130,Tachuris rubrigastra,male,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,16
+131,Tachuris rubrigastra,male,0,Puerto Morin,0,l,-8.426666667,-78.90415,17.8
+132,Tachuris rubrigastra,female,0,Patamo de Ite,3,l,-17.92471667,-70.93836667,13.6
+133,Tachuris rubrigastra,male,0,Viscachuni,3828,h,-15.80676667,-69.99171667,17.6
+134,Tachuris rubrigastra,female,1,Laguna Napique,4,l,-5.5171,-80.70386667,16.6
+135,Tachuris rubrigastra,male,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,16
+136,Tachuris rubrigastra,female,0,Puerto Morin,0,l,-8.426666667,-78.90415,16.9
+137,Tachuris rubrigastra,male,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,16.1
+138,Tachuris rubrigastra,female,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,15.9
+139,Tachuris rubrigastra,male,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,13.8
+140,Tachuris rubrigastra,male,0,Estero Mantagua,8,l,-32.88493333,-71.50816667,14.4
+141,Tachuris rubrigastra,female,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,16.5
+142,Tachuris rubrigastra,female,1,Estero Mantagua,8,l,-32.88493333,-71.50816667,15.2
+156,Troglodytes aedon,female,1,Huachipa,366,l,-12.0084,-76.92101667,15.1
+159,Troglodytes aedon,male,1,Bosque Cachil,2550,m,-7.403833333,-78.77978333,17.3
+175,Troglodytes aedon,male,0,ca. 9.8 km N. of Olmos,129,l,-5.89566,-79.78486,15.8
+178,Troglodytes aedon,male,0,ca. 9.8 km N. of Olmos,133,l,-5.89614,-79.78522,16.3
+181,Troglodytes aedon,male,0,ca. 9.8 km N. of Olmos,143,l,-5.89858,-79.78517,14.2
+196,Troglodytes aedon,,1,Huayup,1049,m,-9.908066667,-77.82136667,15.6
+204,Troglodytes aedon,male,0,Huacapongo,309,l,-8.38685,-78.64518,14.5
+209,Troglodytes aedon,male,1,Chosica,994,l,-11.92503333,-76.6514,13
+216,Zonotrichia capensis,female,1,Irman,1761,m,-9.858316667,-77.74636667,15.5
+221,Troglodytes aedon,male,1,Yanaparin,723,l,-9.958633333,-77.80736667,13.5
+229,Zonotrichia capensis,female,1,Huayup,1060,m,-9.90845,-77.82143333,13.9
+231,Troglodytes aedon,female,1,Carpish Tunel,2798,m,-9.7275,-76.10675,19.5
+233,Troglodytes aedon,female,1,Irman,1761,m,-9.858316667,-77.74636667,14.3
+234,Troglodytes aedon,male,1,Huachipa: El Huayco,352,l,-12.0089,-76.92323333,15.9
+235,Troglodytes aedon,male,1,San Pedro de Casta - Potago,4056,h,-11.7677,-76.53461667,18.9
+236,Zonotrichia capensis,male,1,Contunapampa,4237,h,-11.76863333,-76.52343333,20.4
+237,Zonotrichia capensis,female,1,Caraz,3714,h,-9.100971667,-77.865555,16.2
+242,Troglodytes aedon,male,1,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,14.3
+243,Zonotrichia capensis,male,1,Yanah4,3005,h,-13.2674,-72.18223333,17.8
+244,Troglodytes aedon,male,0,Huachipa,366,l,-12.0084,-76.92101667,15.5
+245,Troglodytes aedon,female,1,Nuevo Mundo,1503,m,-5.213066667,-78.6436,15.9
+246,Zonotrichia capensis,female,1,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,18.4
+247,Zonotrichia capensis,male,1,Cordillera Vilcanota,4030,h,-13.18808333,-72.23136667,19
+248,Zonotrichia capensis,female,1,Cordillera Vilcanota,4200,h,-13.18808333,-72.23136667,18.7
+250,Zonotrichia capensis,male,1,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,19.3
+251,Zonotrichia capensis,male,1,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,17.6
+252,Zonotrichia capensis,male,1,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,15.1
+255,Zonotrichia capensis,male,1,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,16.3
+261,Zonotrichia capensis,male,1,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,21.3
+267,Zonotrichia capensis,female,1,Chontali,2530,m,-5.582083333,-79.16013333,14.3
+270,Zonotrichia capensis,male,1,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,16.9
+272,Zonotrichia capensis,female,1,Bosque Cachil,2500,m,-7.398033333,-78.77826667,14.5
+273,Zonotrichia capensis,male,1,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,18.3
+274,Zonotrichia capensis,female,1,San Pedro de Casta - Potago,4140,h,-11.76958333,-76.53193333,17.4
+276,Zonotrichia capensis,male,1,Caraz,3714,h,-9.100971667,-77.865555,16.6
+277,Zonotrichia capensis,female,1,San Pedro de Casta - Potago,4100,h,-11.76893333,-76.53543333,16.6
+282,Zonotrichia capensis,male,1,Caraz,3714,h,-9.100971667,-77.865555,14.7
+283,Zonotrichia capensis,unknown,1,Chontali,2530,m,-5.582083333,-79.16013333,16.8
+284,Zonotrichia capensis,female,1,Caraz,3714,h,-9.100971667,-77.865555,14.6
+285,Troglodytes aedon,male,0,Huayaringa,982,l,-11.92448333,-76.65196667,14
+287,Zonotrichia capensis,female,1,Carhuayumac,3750,h,-11.76188333,-76.54886667,17.4
+289,Zonotrichia capensis,male,1,Caraz,3714,h,-9.100971667,-77.865555,14.6
+295,Zonotrichia capensis,female,0,Quebrada,1500,m,-12.6519,-72.3236,13.6
+296,Troglodytes aedon,female,0,Quebrada,1500,m,-12.6519,-72.3236,14.1
+297,Troglodytes aedon,male,0,Quebrada,1500,m,-12.6519,-72.3236,16.4
+298,Zonotrichia capensis,male,0,Quebrada,1500,m,-12.6519,-72.3236,14.9
+299,Troglodytes aedon,female,0,ca. 9.8 km N. of Olmos,133,l,-5.89614,-79.78522,15.3
+302,Troglodytes aedon,male,0,Sianbal,322,l,-6.649433333,-76.0727,19.2
+304,Troglodytes aedon,male,0,Huachipa-Choclo,351,l,-12.00148333,-76.92081667,15.3
+305,Troglodytes aedon,female,0,Huachipa: El Huayco,352,l,-12.0089,-76.92323333,15.6
+306,Troglodytes aedon,male,0,Huachipa: El Huayco,352,l,-12.0089,-76.92323333,16.2
+308,Troglodytes aedon,male,0,Huachipa: El Huayco,352,l,-12.0089,-76.92323333,17.4
+326,Troglodytes aedon,male,0,Rio Santa,357,l,-8.69485,-78.37861,13.6
+328,Troglodytes aedon,female,0,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,13.4
+332,Troglodytes aedon,female,0,Mal Paso,375,l,-10.00681667,-77.88163333,13.8
+333,Zonotrichia capensis,female,0,Yanaparin,723,l,-9.958633333,-77.80736667,15.6
+346,Troglodytes aedon,,0,Irman,1761,m,-9.858316667,-77.74636667,15
+347,Zonotrichia capensis,male,0,Irman,1761,m,-9.858316667,-77.74636667,16.3
+351,Zonotrichia capensis,female,0,Fundo de Vequil Comunal,1646,m,-11.80176667,-76.6236,14.5
+353,Troglodytes aedon,male,0,"PERU: Dpto. Amazonas, Prov. Utcubamba, Dist. Lonya Grande",2052,m,-6.104433333,-78.34158333,14.9
+356,Troglodytes aedon,male,0,"PERU: Dpto. Amazonas, Prov. Utcubamba, Dist. Lonya Grande",2073,m,-6.1042,-78.34221667,16.6
+368,Zonotrichia capensis,female,0,,1745,m,-9.858366667,-77.74566667,18.9
+371,Zonotrichia capensis,female,0,,2168,m,-5.84,-79.50533333,15.2
+372,Troglodytes aedon,male,0,,2215,m,-5.84,-79.50533333,14.9
+373,Troglodytes aedon,female,0,,2215,m,-5.84,-79.50533333,13.4
+375,Zonotrichia capensis,not recorded,0,SE1,2390,m,-11.74416667,-76.60883333,15
+383,Zonotrichia capensis,female,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,14.7
+385,Troglodytes aedon,male,0,Carhuaz,3439,h,-9.572116667,-77.84745,15.6
+386,Troglodytes aedon,male,0,Puente Nununya,3548,h,-14.40833333,-73.0876,17.5
+387,Zonotrichia capensis,male,0,Puente Nununya,3548,h,-14.40833333,-73.0876,18.2
+388,Zonotrichia capensis,female,0,Puente Nununya,3573,h,-14.4076,-73.08771667,16.4
+389,Troglodytes aedon,female,0,Puente Nununya,3573,h,-14.4076,-73.08771667,16.2
+390,Zonotrichia capensis,male,0,Puente Nununya,3573,h,-14.4076,-73.08771667,16.6
+394,Troglodytes aedon,male,0,Bosque Cachil,2500,m,-7.398033333,-78.77826667,13.6
+396,Zonotrichia capensis,male,0,Bosque Cachil,2500,m,-7.398033333,-78.77826667,17.2
+404,Troglodytes aedon,male,0,San Pedro de Casta - Potago,3905,h,-11.7677,-76.53461667,19.5
+406,Zonotrichia capensis,female,0,Macate,3931,h,-8.75236,-78.03402,16.8
+407,Zonotrichia capensis,male,0,Macate,3931,h,-8.75236,-78.03402,17.7
+408,Troglodytes aedon,male,0,Carampoma,3959,h,-11.6274,-76.43416667,19.3
+409,Troglodytes aedon,male,0,Carampoma,3967,h,-11.62798333,-76.43485,20.4
+410,Troglodytes aedon,male,0,Carampoma,3973,h,-11.62765,-76.43425,19.8
+413,Zonotrichia capensis,female,0,Bosque Cachil,2550,m,-7.403833333,-78.77603333,13.2
+414,Zonotrichia capensis,female,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,14.9
+415,Troglodytes aedon,female,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,14.4
+416,Troglodytes aedon,female,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,13.8
+418,Zonotrichia capensis,male,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,14.8
+419,Zonotrichia capensis,male,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,16.4
+420,Zonotrichia capensis,male,0,Bosque Cachil,2550,m,-7.403833333,-78.77978333,16.7
+424,Troglodytes aedon,male,0,Tampumayu,2671,m,-14.17391667,-73.32313889,17.5
+426,Troglodytes aedon,male,0,Tampumayu,2671,m,-14.17391667,-73.32313889,17.3
+428,Troglodytes aedon,female,0,Tampumayu,2672,m,-14.17391667,-73.32313889,16.6
+430,Troglodytes aedon,female,0,San Pedro de Casta,4116,h,-11.76706667,-76.52833333,14.9
+433,Zonotrichia capensis,male,0,Contunapampa,4166,h,-11.7682,-76.52406667,20.3
+436,Troglodytes aedon,male,0,Contunapampa,4188,h,-11.76685,-76.52241667,19.6
+437,Troglodytes aedon,male,0,Contunapampa,4233,h,-11.76461667,-76.51785,16.9
+440,Zonotrichia capensis,female,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,13.6
+441,Troglodytes aedon,female,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,13.2
+442,Troglodytes aedon,male,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,15.6
+444,Troglodytes aedon,male,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,15.7
+445,Zonotrichia capensis,male,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,17.9
+446,Troglodytes aedon,female,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,15.6
+447,Zonotrichia capensis,male,0,,39,l,-10.06811667,-78.13603333,18
+463,Troglodytes aedon,male,0,Rio Santa,357,l,-8.69485,-78.37861,14.6
+464,Zonotrichia capensis,male,0,Huac1,3120,h,-13.62533333,-71.718,17.3
+465,Troglodytes aedon,male,0,Rio Santa,357,l,-8.69485,-78.37861,17.4
+466,Zonotrichia capensis,female,0,Rio Santa,357,l,-8.69485,-78.37861,16.5
+469,Troglodytes aedon,female,0,Huachipa,366,l,-12.0084,-76.92101667,14.7
+470,Zonotrichia capensis,female,0,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,16.4
+471,Troglodytes aedon,female,0,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,15.4
+472,Zonotrichia capensis,male,0,Huachipa-Choclo,372,l,-12.00148333,-76.92081667,18
+474,Zonotrichia capensis,male,0,Locumba,740,l,-17.56136167,-70.67236167,15
+475,Zonotrichia capensis,female,0,Locumba,740,l,-17.56136167,-70.67236167,14.4
+476,Zonotrichia capensis,female,0,Locumba,740,l,-17.56136167,-70.67236167,14.5
+477,Zonotrichia capensis,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,15.3
+478,Zonotrichia capensis,male,0,Locumba,740,l,-17.56136167,-70.67236167,16.4
+479,Troglodytes aedon,male,0,Locumba,740,l,-17.56136167,-70.67236167,14.2
+480,Troglodytes aedon,male,0,Locumba,740,l,-17.56136167,-70.67236167,15.8
+481,Troglodytes aedon,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,17.8
+483,Zonotrichia capensis,male,0,Locumba,740,l,-17.56136167,-70.67236167,15.7
+484,Troglodytes aedon,male,0,Locumba,740,l,-17.56136167,-70.67236167,16.8
+486,Troglodytes aedon,male,0,Locumba,740,l,-17.56136167,-70.67236167,13.9
+487,Troglodytes aedon,male,0,Huaylas,3350,h,-8.83621,-77.9258,17.2
+488,Troglodytes aedon,male,0,Yanah2,3380,h,-13.24933333,-72.16916667,18.2
+490,Troglodytes aedon,female,0,Yanah2,3380,h,-13.24933333,-72.16916667,15.3
+491,Zonotrichia capensis,male,0,"PERU: Dpto. Amazonas, Prov. Utcubamba, Dist. Lonya Grande, Tullanya,",1476,m,-6.1019,-78.34316667,16
+495,Troglodytes aedon,male,0,Nuevo Mundo,1503,m,-5.213066667,-78.6435,17.1
+496,Zonotrichia capensis,male,0,R’o Pachachaca,1727,m,-13.66295,-72.93666667,15.4
+497,Zonotrichia capensis,male,0,R’o Pachachaca,1727,m,-13.66295,-72.93666667,14.7
+498,Zonotrichia capensis,male,0,,1727,m,-13.66295,-72.93666667,14.6
+499,Zonotrichia capensis,male,0,,2170,m,-5.84,-79.50533333,14.3
+501,Zonotrichia capensis,female,0,,2175,m,-5.84,-79.50533333,15.8
+504,Troglodytes aedon,male,0,Las Pinas,2307,m,-6.05125,-78.23355,15.1
+506,Zonotrichia capensis,male,0,R’o Antabamba,2338,m,-14.0521,-73.18916667,15.7
+507,Zonotrichia capensis,male,0,ca. Circa,2375,m,-13.89498333,-72.90898333,15.3
+517,Zonotrichia capensis,female,0,Bosque Cachil,2500,m,-7.398033333,-78.77826667,16.81
+518,Zonotrichia capensis,female,0,Bosque Cachil,2500,m,-7.398033333,-78.77826667,15.9
+519,Zonotrichia capensis,female,0,Chontali,2505,m,-5.583216667,-79.15983333,17
+520,Zonotrichia capensis,female,0,Chontali,2520,m,-5.58235,-79.15975,15
+523,Zonotrichia capensis,female,0,Chontali,2520,m,-5.58235,-79.15975,15.8
+524,Zonotrichia capensis,male,0,Chontali,2520,m,-5.58235,-79.15975,14
+525,Zonotrichia capensis,female,0,Chontali,2520,m,-5.58235,-79.15975,14.9
+526,Zonotrichia capensis,male,0,Chontali,2520,m,-5.58235,-79.15975,15.9
+527,Troglodytes aedon,male,0,Chontali,2520,m,-5.58235,-79.15975,15.4
+528,Zonotrichia capensis,male,0,Chontali,2521,m,-5.585183333,-79.15823333,16.1
+529,Zonotrichia capensis,male,0,Chontali,2530,m,-5.582083333,-79.16013333,15.4
+530,Zonotrichia capensis,male,0,Chontali,2530,m,-5.582083333,-79.16013333,17.5
+531,Zonotrichia capensis,male,0,Chontali,2532,m,-5.582233333,-79.16101667,16.2
+533,Zonotrichia capensis,male,0,Tampumayu,2671,m,-14.17391667,-73.32313889,16.1
+534,Zonotrichia capensis,male,0,Tampumayu,2671,m,-14.17391667,-73.32313889,16
+536,Zonotrichia capensis,female,0,Carpish Tunel,2792,m,-9.726716667,-76.1065,17.7
+537,Zonotrichia capensis,female,0,Carpish Tunel,2798,m,-9.7275,-76.10675,17.3
+538,Troglodytes aedon,female,0,Macate,2972,m,-8.75478,-78.04845,14.1
+539,Zonotrichia capensis,female,0,Macate,2972,m,-8.75478,-78.04845,14.9
+540,Zonotrichia capensis,female,0,Macate,2972,m,-8.75478,-78.04845,15.4
+541,Troglodytes aedon,male,0,Macate,2972,m,-8.75478,-78.04845,15.8
+542,Troglodytes aedon,female,0,Macate,2972,m,-8.75478,-78.04845,16.7
+543,Troglodytes aedon,male,0,Macate,3740,h,-8.74247,-78.0407,15
+545,Zonotrichia capensis,female,0,Macate,2972,m,-8.75478,-78.04845,16.1
+546,Zonotrichia capensis,female,0,Macate,2972,m,-8.75478,-78.04845,18.2
+549,Zonotrichia capensis,female,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,18.2
+550,Zonotrichia capensis,female,0,Anco Cahua,2975,m,-17.32088333,-70.24773333,17.5
+555,Zonotrichia capensis,male,0,Huac1,3120,h,-13.62533333,-71.718,16.4
+556,Zonotrichia capensis,female,0,Puente Caraybamba,3120,h,-14.61375,-73.28245,14.2
+557,Zonotrichia capensis,male,0,Puente Caraybamba,3120,h,-14.61375,-73.28245,16.9
+565,Zonotrichia capensis,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,16.3
+566,Zonotrichia capensis,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,16.1
+567,Zonotrichia capensis,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,17.4
+568,Zonotrichia capensis,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,16.1
+569,Zonotrichia capensis,male,0,Chuquibamba,3200,h,-15.81433333,-72.66711667,17.9
+573,Zonotrichia capensis,female,0,Carhuaz,3439,h,-9.572116667,-77.84745,16.4
+581,Zonotrichia capensis,female,0,Puente „ununya,3563,h,-14.67873333,-73.1478,15.2
+583,Zonotrichia capensis,male,0,Puente „ununya,3563,h,-14.67873333,-73.1478,15.3
+587,Zonotrichia capensis,male,0,,3580,h,-13.48649,-72.98179,17.8
+591,Zonotrichia capensis,male,0,,3680,h,-13.48365,-72.98068,19.4
+600,Zonotrichia capensis,male,0,Caraz,3714,h,-9.100971667,-77.865555,14.5
+601,Troglodytes aedon,male,0,Caraz,3714,h,-9.100971667,-77.865555,16.5
+602,Troglodytes aedon,male,0,Caraz,3714,h,-9.100971667,-77.865555,15.2
+605,Zonotrichia capensis,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,13.3
+606,Troglodytes aedon,male,0,Carampoma,3967,h,-11.62798333,-76.43485,19.3
+607,Zonotrichia capensis,male,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,16.2
+608,Troglodytes aedon,male,0,Carampoma,3981,h,-11.62778333,-76.43411667,19.7
+609,Troglodytes aedon,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,16.7
+610,Zonotrichia capensis,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,19
+611,Zonotrichia capensis,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,16
+612,Zonotrichia capensis,male,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,19.7
+613,Troglodytes aedon,male,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,15.1
+614,Zonotrichia capensis,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,17.6
+615,Troglodytes aedon,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,16.8
+616,Zonotrichia capensis,female,0,Carhuayumac,3750,h,-11.76188333,-76.54886667,16.8
+630,Zonotrichia capensis,female,0,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,17.4
+631,Zonotrichia capensis,female,0,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,19.5
+632,Zonotrichia capensis,female,0,Cordillera Vilcanota,3835,h,-13.18808333,-72.23136667,19.4
+634,Zonotrichia capensis,female,0,Macate,3840,h,-8.75236,-78.03402,17.6
+637,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,3910,h,-11.7636,-76.5425,19.9
+638,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,3936,h,-11.7677,-76.53461667,20.9
+639,Zonotrichia capensis,male,0,Carampoma,3945,h,-11.62658333,-76.43398333,17
+640,Zonotrichia capensis,male,0,Carampoma,3967,h,-11.62798333,-76.43485,20.3
+642,Troglodytes aedon,male,0,San Pedro de Casta,4123,h,-11.76821667,-76.5305,17.1
+643,Zonotrichia capensis,male,0,Carampoma,3981,h,-11.62778333,-76.43411667,20.7
+646,Zonotrichia capensis,female,0,Carampoma,3981,h,-11.62778333,-76.43411667,19.9
+648,Zonotrichia capensis,male,0,Macate,3997,h,-8.75236,-78.03402,18.3
+649,Zonotrichia capensis,female,0,Cordillera Vilcanota,4030,h,-13.18808333,-72.23136667,18.9
+653,Zonotrichia capensis,female,0,San Pedro de Casta - Potago,4082,h,-11.76846667,-76.53325,17.2
+654,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,4088,h,-11.76856667,-76.53326667,18.2
+655,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,4088,h,-11.76856667,-76.53326667,19.1
+656,Zonotrichia capensis,female,0,San Pedro de Casta - Potago,4088,h,-11.76856667,-76.53326667,19.5
+657,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,4108,h,-11.76893333,-76.53543333,16.9
+660,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,4108,h,-11.76893333,-76.53543333,16.8
+661,Zonotrichia capensis,female,0,San Pedro de Casta - Potago,4131,h,-11.76938333,-76.53278333,19.3
+663,Zonotrichia capensis,male,0,San Pedro de Casta,4142,h,-11.7673,-76.52476667,19.4
+664,Zonotrichia capensis,female,0,San Pedro de Casta,4142,h,-11.7673,-76.52476667,21
+666,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,4150,h,-11.76958333,-76.53193333,19.7
+669,Zonotrichia capensis,male,0,San Pedro de Casta - Potago,4150,h,-11.76958333,-76.53193333,20.6
+671,Troglodytes aedon,male,0,Yanah1,4300,h,-13.19933333,-72.16,17.7
+672,Troglodytes aedon,female,0,Yanah1,4300,h,-13.19933333,-72.16,18.5
+675,Zonotrichia capensis,male,0,,4375,h,-14.06006667,-73.00775,20
+678,Zonotrichia capensis,female,0,Yanah2,3380,h,-13.24933333,-72.16916667,18.8
+681,Troglodytes aedon,male,1,Cordillera Vilcanota,4030,h,-13.18808333,-72.23136667,19.3
