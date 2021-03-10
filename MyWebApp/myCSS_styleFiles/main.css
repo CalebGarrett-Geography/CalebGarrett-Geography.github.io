@@ -9,7 +9,7 @@
 }
 
 .pie-chart {
-  height: 20px;
+  height: 150px;
 }
 
 .dc-chart .axis text{
@@ -26,7 +26,7 @@ text {
 }
 
 #map {
-  height: 80px;
+  height: 100%;
   width: auto;
 }
 
